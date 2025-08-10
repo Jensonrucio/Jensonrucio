@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+	<style type="text/css">
+		label{
+			display: block;
+			margin-bottom: 5px;
+			color: white;
+		}
+		input, textarea, button{
+			width: 200px;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: black;
+		}
+
+		ul{
+			
+			display: flex;
+			justify-content: left;
+			align-items: self-end;
+	}
+		ul li{
+			list-style: none;
+			margin-left: 30px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-size: 14px;
+			
+		}
+
+		ul li a{
+			text-decoration: none;
+			color: whitesmoke;
+			font-family: sans-serif;
+			font-weight: bold;
+			transition: 0.4x ease-in-out;
+
+		}
+
+		ul li a:hover{
+			color:orange;
+		}
+
+		body{
+
+		}
+
+	</style>
+</head>
+<body style="background-color: black;">
+	<h1 style="text-align: center; color:white;">Contact Form</h1>
+<form action ="/submit" method="post" style="max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius:8px;">
+	<div class="menu">
+			<ul>
+				<li><a href="index.html" target="self">Home</a></li>
+				<li><a href="school.html" target="self">School</a></li>
+				<li><a href="index.html" target="self">About</a></li>
+				<li><a href="contact.html" target="self">Contact</a></li>
+			</ul>
+	<label for="name">Name:</label>
+	<input type="text" name="name" required/>
+
+	<label for="email">Email:</label>
+	<input type="text" name="email" required/>
+
+	<label for="message">Message:</label>
+	<textarea id="message" name="message" rows="4" required></textarea>
+	<button type="submit" style="background-color: seagreen;">Send a message</button>
+</body>
+</html>
